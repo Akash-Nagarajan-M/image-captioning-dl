@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<center>
+	
+<h1 >Automated Image</h1>
+<h1>Captioning</h1>
+
+<br>
+<br>
+
+<form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'>
+    <div style="border:2px solid black;width: 400px;height: 200px">
+    <input type="file" name='file1' style="left:50%;top:50%;">
+    </div>
+<input type="submit" name="btn" value='predict caption' class='btn btn-warning'> 
+</form>
+</center>
+
+{%endblock%}
